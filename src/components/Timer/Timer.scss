@@ -4,7 +4,8 @@
 .timer {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
     margin-top: 20px;
 
     .t-block:first-child {

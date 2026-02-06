@@ -2,8 +2,11 @@
 @use "../../styles/fonts.scss";
 
 .header {
-  padding: 20px;
+  // padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
     margin-top: 20px;
@@ -102,7 +105,8 @@
       }
 
       .weekday {
-        padding: 0 40px;
+        min-width: 150px;
+        // padding: 0 40px;
         border-bottom: 1px solid $text-color;
         font-weight: 500;
       }
@@ -178,7 +182,6 @@
     }
 
     .header-intro {
-
       max-width: 290px;
 
       h1 {
@@ -188,6 +191,18 @@
 
     img {
       max-width: 255px;
+    }
+
+    .header-calendar {
+
+      .calendar-table {
+
+        .weekday {
+          padding: 0;
+          min-width: 119px;
+          max-width: 119px;
+        }
+      }
     }
   }
 
@@ -224,6 +239,7 @@
       .calendar-table {
 
         .weekday {
+          min-width: 100px;
           font-size: 16px;
           padding: 0 24px;
         }
@@ -242,11 +258,11 @@
           height: 70px;
         }
 
-         .day.active::after {
+        .day.active::after {
           width: 250px;
           height: 250px;
           bottom: -70px
-         }
+        }
 
         .active {
           font-size: 74px;
