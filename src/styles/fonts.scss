@@ -1,13 +1,15 @@
 @font-face {
     font-family: "Delius";
-    src: url("../assets/fonts/delius-regular.ttf") format("truetype");
+    src: url("../assets/fonts/delius-regular.woff") format("woff2"),
+    url("../assets/fonts/delius-regular.ttf") format("truetype");
     font-weight: 400; 
     font-style: normal;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("../assets/fonts/OpenSans.ttf") format("truetype");
+    src: url("../assets/fonts/OpenSans.woff") format("woff2"),
+    url("../assets/fonts/OpenSans.ttf") format("truetype");
     font-weight: 400; 
     font-style: normal;
 }
