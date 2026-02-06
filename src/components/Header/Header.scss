@@ -2,7 +2,7 @@
 @use "../../styles/fonts.scss";
 
 .header {
-  // padding: 20px;
+  margin-top: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -106,7 +106,6 @@
 
       .weekday {
         min-width: 150px;
-        // padding: 0 40px;
         border-bottom: 1px solid $text-color;
         font-weight: 500;
       }
