@@ -1,11 +1,12 @@
 @use "./fonts.scss";
 @use "./variables";
+@use "@fontsource/roboto";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Delius', cursive;
+  font-family: 'Roboto', cursive;
 }
 
 body {

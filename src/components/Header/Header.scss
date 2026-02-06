@@ -11,8 +11,8 @@
   h1 {
     margin-top: 20px;
     color: $text-color;
-    font-weight: 400;
     font-size: 48px;
+    font-weight: 400;
   }
 
   h2 {
@@ -40,9 +40,6 @@
         overflow: hidden;
         padding: 0 20px;
 
-        h1 {
-          font-weight: bold;
-        }
       }
 
       .child-photos {
@@ -129,7 +126,7 @@
 
       .active {
         position: relative;
-        font-size: 114px;
+        font-size: 104px;
       }
 
       .day.active::after {

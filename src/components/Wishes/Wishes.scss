@@ -43,3 +43,17 @@
 
     }
 }
+
+@media (max-width: 760px){
+    .wishes {
+        
+        &-container{
+            min-width: 460px;
+            max-width: 750px;
+
+            p{
+                min-width: 390px;
+            }
+        }
+    }
+}
