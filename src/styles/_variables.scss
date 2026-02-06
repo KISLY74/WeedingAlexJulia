@@ -1,0 +1,9 @@
+@use "sass:color";
+
+$main-color: #c9a7a7;
+$text-color: #776252;
+$bg-color: #f5eee9;
+$border-color: #eee;
+$wishes-color: #dbd1c9;
+$main: #776252;
+$bronze-gradient: linear-gradient(135deg, color.adjust($main, $lightness: 5%) 0%, color.adjust($main, $lightness: 20%) 25%, color.adjust($main, $lightness: 45%) 50%, color.adjust($main, $lightness: 30%) 75%, color.adjust($main, $lightness: 15%) 100%);

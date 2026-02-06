@@ -1,0 +1,73 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global";
+
+.venue {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0;
+
+    h1 {
+        font-weight: 400;
+        font-size: 39px;
+        margin: 40px 0;
+        color: $text-color;
+    }
+
+    p {
+        font-family: Georgia, serif;
+        font-size: 19px;
+        margin: 18px 0;
+        color: $text-color;
+    }
+
+    .map-button {
+        margin: 20px 0;
+        padding: 12px 24px;
+        color: $text-color;
+        font-size: 19px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        background: none;
+        border: 1px solid $text-color;
+        gap: 10px;
+
+        .heart-icon {
+            width: 22px;
+            // height: 22px;
+            object-fit: cover;
+        }
+    }
+
+
+    .map-wrapper {
+        overflow: hidden;
+        max-height: 0;
+        transition:
+            max-height 0.5s ease,
+            opacity .5s ease,
+            transform .5s ease;
+
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+
+        iframe {
+            width: 100%;
+            // width: 600px;
+            height: 400px;
+            border: none;
+        }
+    }
+
+    .map-wrapper.open {
+        max-height: 500px;
+    }
+
+    .map-wrapper.closed {
+        max-height: 0;
+        margin-top: 0;
+    }
+
+
+}

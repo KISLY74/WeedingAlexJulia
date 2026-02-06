@@ -1,0 +1,97 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global";
+
+.guest-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $text-color;
+    font-size: 39px;
+    font-weight: 400;
+  }
+
+  .guest-block {
+    padding: 16px;
+    border-radius: 10px;
+    
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+    
+    input {
+      background: transparent;
+      outline: none;
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid $text-color;
+      font-size: 16px;
+    }
+  }
+
+  .add-btn,
+  .remove-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .add-btn{
+    background: none;
+    border: 1px solid $text-color;
+  }
+  .remove-btn{
+    color: #fff;
+    background: #c67474;
+    border-bottom: 1px solid $text-color;
+    border-left: 1px solid $text-color;
+    border-right: 1px solid $text-color;
+  }
+
+  .attending-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    select {
+      margin-top: 6px;
+      padding: 10px;
+      background: none;
+      outline: none;
+      border: 1px solid $text-color;
+      font-size: 16px;
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: $main-color;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .ok {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .err {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

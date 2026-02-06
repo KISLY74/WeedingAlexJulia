@@ -1,0 +1,25 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global";
+
+.dresscode {
+    padding: 0 30px;
+
+    h1 {
+        font-size: 39px;
+        color: $text-color;
+        font-weight: 400;
+    }
+
+    &-content {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        p{
+            font-family: Georgia, serif;
+            color: $text-color;
+        }
+
+    }
+}
