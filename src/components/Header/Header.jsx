@@ -6,7 +6,7 @@ export default function Header() {
       <div className="header-photo-block">
         <div className="photo-frame">
           <div className="photo-frame-container">
-            <h1>Wedding</h1>
+            <h1>Wedding---</h1>
             <h2>29 | 07 | 26</h2>
             <div className="child-photos">
               <img src="/images/photo.png" alt="" />
