@@ -46,12 +46,14 @@
   }
   
   .add-btn{
-    background: none;
+    color: #fff;
     border: 1px solid $text-color;
+    background: $text-color;
   }
   .remove-btn{
     color: #fff;
-    background: #c67474;
+    background: rgba($text-color, $alpha: 0.5);
+    // background: #c67474;
     border-bottom: 1px solid $text-color;
     border-left: 1px solid $text-color;
     border-right: 1px solid $text-color;
@@ -76,7 +78,7 @@
   .submit-btn {
     width: 100%;
     padding: 12px;
-    background: $main-color;
+    background: $text-color;
     color: white;
     border: none;
     font-size: 18px;
