@@ -11,6 +11,8 @@ import EnvelopeIntro from './components/EnvelopeIntro/EnvelopeIntro'
 function App() {
   const [showIntro, setShowIntro] = useState(true);
 
+  
+
   return (
     <>
       {showIntro && <EnvelopeIntro onFinish={() => setShowIntro(false)} />}
