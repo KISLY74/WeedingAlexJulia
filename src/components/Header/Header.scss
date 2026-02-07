@@ -51,15 +51,15 @@
         15% 25%,
         80% 18%,
         90% 10%,
-        20% 70%,
-        10% 85%,
+        14% 70%,
+        4% 85%,
         35% 90%,
-        60% 75%,
-        85% 65%,
+        7% 45%,
+        95% 65%,
         50% 50%,
-        95% 88%,
-        85% 38%,
-        40% 30%;
+        97% 94%,
+        87% 38%,
+        50% 20%;
 
       background-size:
         18px,
@@ -69,12 +69,12 @@
         16px,
         22px,
         18px,
-        20px,
+        34px,
         26px,
         22px,
         18px,
         28px,
-        20px;
+        30px;
 
       background-repeat: no-repeat;
 
@@ -212,30 +212,44 @@
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1444px) {
   .header {
-    .photo-frame {
-      &-container {
-        h1 {
-          font-size: 48px;
-        }
 
-        h2 {
-          font-size: 29px;
-        }
-      }
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 26px;
     }
 
     .header-intro {
-      max-width: 290px;
+      max-width: 420px;
 
       h1 {
-        font-size: 39px;
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 17px;
+        max-width: 380px;
       }
     }
 
-    img {
-      max-width: 255px;
+    .header-photo-block {
+
+      .photo-frame {
+
+        &-container {
+          padding: 0 12px;
+          gap: 40px;
+        }
+
+        .child-photos img {
+          width: 360px;
+          max-width: 360px;
+        }
+      }
     }
 
     .header-calendar {
@@ -243,40 +257,71 @@
       .calendar-table {
 
         .weekday {
-          padding: 0;
-          min-width: 119px;
-          max-width: 119px;
+          min-width: 130px;
+          font-size: 18px;
+        }
+
+        .month {
+          font-size: 22px;
+        }
+
+        .day {
+          font-size: 70px;
+        }
+
+        .day.active::after {
+          width: 260px;
+          height: 260px;
+          bottom: -70px;
+        }
+
+        .active {
+          font-size: 90px;
         }
       }
     }
   }
-
 }
 
-@media (max-width: 360px) {
-  .header {
-    .photo-frame {
-      &-container {
-        h1 {
-          font-size: 40px;
-        }
 
-        h2 {
-          font-size: 26px;
-        }
-      }
+@media (max-width: 480px) {
+  .header {
+
+    h1 {
+      font-size: 38px;
+    }
+
+    h2 {
+      font-size: 24px;
     }
 
     .header-intro {
-      max-width: 310px;
+      max-width: 300px;
 
       h1 {
-        font-size: 38px;
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 16px;
+        max-width: 260px;
       }
     }
 
-    img {
-      max-width: 235px;
+    .header-photo-block {
+
+      .photo-frame {
+
+        &-container {
+          padding: 0 10px;
+          gap: 30px;
+        }
+
+        .child-photos img {
+          width: 290px;
+          max-width: 290px;
+        }
+      }
     }
 
     .header-calendar {
@@ -284,9 +329,8 @@
       .calendar-table {
 
         .weekday {
-          min-width: 100px;
+          min-width: 110px;
           font-size: 16px;
-          padding: 0 24px;
         }
 
         .month {
@@ -294,26 +338,91 @@
         }
 
         .day {
-          font-size: 62px;
-          font-weight: bold;
-        }
-
-        .day,
-        .circle {
-          height: 70px;
+          font-size: 60px;
         }
 
         .day.active::after {
-          width: 250px;
-          height: 250px;
-          bottom: -70px
+          width: 230px;
+          height: 230px;
+          bottom: -60px;
         }
 
         .active {
-          font-size: 74px;
+          font-size: 70px;
         }
       }
     }
   }
+}
 
+
+@media (max-width: 360px) {
+  .header {
+
+    h1 {
+      font-size: 34px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .header-intro {
+      max-width: 280px;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 15px;
+        max-width: 240px;
+      }
+    }
+
+    .header-photo-block {
+
+      .photo-frame {
+
+        &-container {
+          padding: 0 8px;
+          gap: 25px;
+        }
+
+        .child-photos img {
+          width: 230px;
+          max-width: 230px;
+        }
+      }
+    }
+
+    .header-calendar {
+
+      .calendar-table {
+
+        .weekday {
+          min-width: 95px;
+          font-size: 14px;
+        }
+
+        .month {
+          font-size: 18px;
+        }
+
+        .day {
+          font-size: 52px;
+        }
+
+        .day.active::after {
+          width: 200px;
+          height: 200px;
+          bottom: -55px;
+        }
+
+        .active {
+          font-size: 62px;
+        }
+      }
+    }
+  }
 }
