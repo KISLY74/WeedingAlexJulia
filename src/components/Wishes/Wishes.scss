@@ -37,6 +37,12 @@
       padding: 20px;
       box-sizing: border-box;
 
+      img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
       p {
         font-family: Georgia, serif;
         max-width: 640px;
