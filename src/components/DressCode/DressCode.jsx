@@ -11,6 +11,14 @@ export default function DressCode() {
                 <p>Для нас главное - Ваше  присутствие! Но мы будем рады, если в своих нарядах вы поддержите цветовую гамму нашей свадьбы.</p>
                 <p className="circle-black"></p>
             </div>
+            <div className="photo">
+                    <img src="/images/dresscode/wm1.png" alt="" />
+                    <img src="/images/dresscode/wm2.png" alt="" />
+                    <img src="/images/dresscode/wm3.png" alt="" />
+                    <img src="/images/dresscode/wm4.png" alt="" />
+                    <img src="/images/dresscode/m1.png" alt="" />
+                    <img src="/images/dresscode/m2.png" alt="" />
+            </div>
         </section>
     </>
 }

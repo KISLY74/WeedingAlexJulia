@@ -18,12 +18,12 @@
         align-items: center;
         gap: 40px;
 
-        p{
+        p {
             font-family: Georgia, serif;
             color: $text-color;
         }
 
-        .circle-black{
+        .circle-black {
             align-items: center;
             width: 70px;
             height: 70px;
@@ -31,5 +31,19 @@
             background-color: black;
         }
 
+    }
+
+    .photo {
+        margin-top: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+            width: 105px;
+            object-fit: contain;
+        }
     }
 }
