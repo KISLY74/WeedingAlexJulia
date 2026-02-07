@@ -29,6 +29,55 @@
       border: 8px solid;
       border-image: $bronze-gradient 1;
 
+      background-image:
+        url("/images/heartFon.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartFon.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartFon.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartFon.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartFon.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartFon.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartBD.png"),
+        url("/images/heartFon.png");
+
+      background-position:
+        5% 8%,
+        15% 25%,
+        80% 18%,
+        90% 10%,
+        20% 70%,
+        10% 85%,
+        35% 90%,
+        60% 75%,
+        85% 65%,
+        50% 50%,
+        95% 88%,
+        85% 38%,
+        40% 30%;
+
+      background-size:
+        18px,
+        22px,
+        20px,
+        24px,
+        16px,
+        22px,
+        18px,
+        20px,
+        26px,
+        22px,
+        18px,
+        28px,
+        20px;
+
+      background-repeat: no-repeat;
+
       &-container {
         margin: 5px;
         border: 3px solid;

@@ -13,6 +13,52 @@
         margin-bottom: 40px;
     }
 
+    background-image: url("/images/heartFon.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartFon.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartFon.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartFon.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartFon.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartFon.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartBD.png"),
+    url("/images/heartFon.png");
+
+    background-position: 5% 8%,
+    15% 20%,
+    80% 18%,
+    90% 10%,
+    20% 70%,
+    10% 85%,
+    21% 97%,
+    5% 55%,
+    88% 65%,
+    60% 50%,
+    95% 88%,
+    85% 38%,
+    50% 22%;
+
+    background-size: 18px,
+    22px,
+    20px,
+    24px,
+    16px,
+    22px,
+    18px,
+    20px,
+    36px,
+    28px,
+    18px,
+    28px,
+    40px;
+
+    background-repeat: no-repeat;
+
     &-content {
         display: flex;
         flex-direction: column;
