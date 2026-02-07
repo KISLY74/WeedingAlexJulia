@@ -8,7 +8,7 @@ export default function Footer() {
             <h1>Ждём вас <br />через...</h1>
             <div className="footer-content">
                 <Timer />
-                <img src="/images/photoNew.png" alt="" />
+                <img src="/images/photo_ft.png" alt="" />
             </div>
         </div>
     </footer>
