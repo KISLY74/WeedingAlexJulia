@@ -1,14 +1,13 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import "./EnvelopeIntro.scss";
 
-export default function EnvelopeIntro({ onFinish }) {
+export default function EnvelopeIntro({ onFinish, audioRef }) {
   const [opened, setOpened] = useState(false);
-  const audioRef = useRef(null);
 
   const handleOpen = () => {
     setOpened(true);
 
-    if (audioRef.current) {
+    if (audioRef?.current) {
       audioRef.current.play().catch(() => { });
     }
 
@@ -18,7 +17,6 @@ export default function EnvelopeIntro({ onFinish }) {
   return (
     <div className="envelope-screen">
 
-      <audio ref={audioRef} src="/audio/Maksim.mp3" preload="auto" loop />
       <div className="wrapper">
 
         {/* Корпус конверта — единственная маска */}

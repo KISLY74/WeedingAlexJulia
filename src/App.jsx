@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Header from './components/Header/Header'
 import Schedule from './components/Schedule/Schedule'
 import Venue from './components/Venue/Venue'
@@ -10,12 +10,13 @@ import EnvelopeIntro from './components/EnvelopeIntro/EnvelopeIntro'
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
-
-  
+  const  audioRef = useRef(null);
 
   return (
     <>
-      {showIntro && <EnvelopeIntro onFinish={() => setShowIntro(false)} />}
+      <audio ref={audioRef} src="/audio/Maksim.mp3" preload="auto" loop />
+
+      {showIntro && <EnvelopeIntro onFinish={() => setShowIntro(false)} audioRef={audioRef}/>}
 
       {!showIntro && (
         <>

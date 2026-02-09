@@ -270,8 +270,8 @@
         }
 
         .day.active::after {
-          width: 260px;
-          height: 260px;
+          width: 275px;
+          height: 275px;
           bottom: -70px;
         }
 
@@ -342,13 +342,13 @@
         }
 
         .day.active::after {
-          width: 230px;
-          height: 230px;
-          bottom: -60px;
+          width: 245px;
+          height: 245px;
+          bottom: -50px;
         }
 
         .active {
-          font-size: 70px;
+          font-size: 80px;
         }
       }
     }
@@ -414,13 +414,13 @@
         }
 
         .day.active::after {
-          width: 200px;
-          height: 200px;
-          bottom: -55px;
+          width: 220px;
+          height: 220px;
+          bottom: -35px;
         }
 
         .active {
-          font-size: 62px;
+          font-size: 68px;
         }
       }
     }
