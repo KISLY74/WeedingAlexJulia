@@ -1,15 +1,13 @@
 import { useState } from "react";
 import "./EnvelopeIntro.scss";
 
-export default function EnvelopeIntro({ onFinish, audioRef }) {
+export default function EnvelopeIntro({ onFinish, startMusic }) {
   const [opened, setOpened] = useState(false);
 
   const handleOpen = () => {
     setOpened(true);
 
-    if (audioRef?.current) {
-      audioRef.current.play().catch(() => { });
-    }
+    startMusic();
 
     setTimeout(() => onFinish(), 3500);
   };

@@ -10,27 +10,33 @@ import EnvelopeIntro from './components/EnvelopeIntro/EnvelopeIntro'
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
-  const  audioRef = useRef(null);
+  const audioRef = useRef(null);
 
-  return (
-    <>
-      <audio ref={audioRef} src="/audio/Maksim.mp3" preload="auto" loop />
+  const startMusic = () => {
+    if (audioRef?.current) {
+      audioRef.current.play().catch(() => { });
+    };
+  };
 
-      {showIntro && <EnvelopeIntro onFinish={() => setShowIntro(false)} audioRef={audioRef}/>}
+return (
+  <>
+    <audio ref={audioRef} src="/audio/Maksim.mp3" preload="auto" loop />
 
-      {!showIntro && (
-        <>
-          <Header />
-          <Venue />
-          <Schedule />
-          <Wishes />
-          <DressCode />
-          <GuestForm />
-          <Footer />
-        </>
-      )}
-    </>
-  )
+    {showIntro && <EnvelopeIntro onFinish={() => setShowIntro(false)} startMusic={startMusic} />}
+
+    {!showIntro && (
+      <>
+        <Header />
+        <Venue />
+        <Schedule />
+        <Wishes />
+        <DressCode />
+        <GuestForm />
+        <Footer />
+      </>
+    )}
+  </>
+)
 }
 
 export default App
